@@ -23,11 +23,13 @@ class TodoListScreen extends StatefulWidget {
 }
 
 class _TodoListScreenState extends State<TodoListScreen> {
-  List<String> todos = [];
-  TextEditingController _todoController = TextEditingController();
-  TextEditingController _editTodoController = TextEditingController();
-  bool isEditing = false;
-  int editingIndex = -1;
+  final List<String> todos = [];
+  final TextEditingController _todoController = TextEditingController();
+  final TextEditingController _editTodoController = TextEditingController();
+  bool _isEditing = false;
+  int _editingIndex = -1;
+
+  static const Duration _snackBarDuration = Duration(seconds: 2);
 
   void _addTodo() {
     String newTodo = _todoController.text.trim();
@@ -43,15 +45,15 @@ class _TodoListScreenState extends State<TodoListScreen> {
 
   void _startEditing(int index) {
     setState(() {
-      isEditing = true;
-      editingIndex = index;
+      _isEditing = true;
+      _editingIndex = index;
       _editTodoController.text = todos[index];
     });
   }
 
   void _editTodo() {
     setState(() {
-      todos[editingIndex] = _editTodoController.text.trim();
+      todos[_editingIndex] = _editTodoController.text.trim();
       _resetEditing();
     });
   }
@@ -59,7 +61,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
   void _removeTodo(int index) {
     setState(() {
       todos.removeAt(index);
-      if (isEditing && index == editingIndex) {
+      if (_isEditing && index == _editingIndex) {
         _resetEditing();
       }
     });
@@ -67,8 +69,8 @@ class _TodoListScreenState extends State<TodoListScreen> {
 
   void _resetEditing() {
     setState(() {
-      isEditing = false;
-      editingIndex = -1;
+      _isEditing = false;
+      _editingIndex = -1;
       _editTodoController.clear();
     });
   }
@@ -77,7 +79,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(message),
-        duration: Duration(seconds: 2),
+        duration: _snackBarDuration,
       ),
     );
   }
@@ -106,12 +108,12 @@ class _TodoListScreenState extends State<TodoListScreen> {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: isEditing ? _buildEditTextField() : _buildAddTextField(),
+            child: _isEditing ? _buildEditTextField() : _buildAddTextField(),
           ),
           SizedBox(width: 10),
           ElevatedButton(
-            onPressed: isEditing ? _editTodo : _addTodo,
-            child: Text(isEditing ? 'Salvar' : 'Adicionar'),
+            onPressed: _isEditing ? _editTodo : _addTodo,
+            child: Text(_isEditing ? 'Salvar' : 'Adicionar'),
           ),
         ],
       ),
@@ -124,6 +126,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
       decoration: InputDecoration(
         hintText: 'Digite uma tarefa',
       ),
+      onSubmitted: (_) => _addTodo(),
     );
   }
 
@@ -133,6 +136,7 @@ class _TodoListScreenState extends State<TodoListScreen> {
       decoration: InputDecoration(
         hintText: 'Editar tarefa',
       ),
+      onSubmitted: (_) => _editTodo(),
     );
   }
 
