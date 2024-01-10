@@ -1,5 +1,3 @@
- ![print_project](https://github.com/leonardojpereira/todolist-flutter/assets/87662269/e69177cf-1b89-40b2-880f-b05acfe46b96)
-
 <h1 align="center">
 
  Lista de tarefas - Flutter 📋
