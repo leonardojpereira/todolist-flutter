@@ -21,7 +21,8 @@ Um app simples de lista de tarefas feito com o objetivo de por em prática os pr
 Siga as instruções abaixo para instalar e executar o projeto em sua máquina:
 
 1. Execute o comando no seu terminal para clonar o repositório:
-   ```https://github.com/leonardojpereira/todolist-flutter```
+   
+   ```git clone https://github.com/leonardojpereira/todolist-flutter```
    
 3. Navegue até o diretório do projeto e execute:
    ```cd seu-diretorio
