@@ -25,10 +25,12 @@ Siga as instruções abaixo para instalar e executar o projeto em sua máquina:
    ```git clone https://github.com/leonardojpereira/todolist-flutter```
    
 3. Navegue até o diretório do projeto e execute:
-   ```cd seu-diretorio
-      flutter pub get```
    
-4. Utilize o seguinte comando para iniciar o aplicativo:
+   ```cd seu-diretorio```
+   ```flutter pub get```
+   
+5. Utilize o seguinte comando para iniciar o aplicativo:
+   
    ```flutter run```
 
 
