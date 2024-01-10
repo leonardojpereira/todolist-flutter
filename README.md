@@ -1,16 +1,38 @@
-# project_01
+<h1 align="center">
+ Lista de tarefas - Flutter 📋
+</h1>
 
-A new Flutter project.
+<h2>
+  :pencil: Descrição do projeto
+</h2>
 
-## Getting Started
+<p>
+Um app simples de lista de tarefas feito com o objetivo de por em prática os principais conceitos do Flutter.
+</p>
 
-This project is a starting point for a Flutter application.
+## 🛠️ Feito com
+* [Visual Studio Code](https://code.visualstudio.com) - Coding Editor
 
-A few resources to get you started if this is your first Flutter project:
+## 💻 Tecnologias utilizadas
+-  <img align="center" alt="logo_react" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"> **Flutter**: Um poderoso framework mutiplataforma criado para construir interfaces de usuário (UI) nativas para iOS, Android, web e desktop usando a linguagem Dart.
+-  
+## :electric_plug: Instalação e Uso
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Siga as instruções abaixo para instalar e executar o projeto em sua máquina:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Execute o comando no seu terminal para clonar o repositório:
+   ```https://github.com/leonardojpereira/todolist-flutter```
+   
+3. Navegue até o diretório do projeto e execute:
+   ```cd seu-diretorio
+      flutter pub get```
+   
+4. Utilize o seguinte comando para iniciar o aplicativo:
+   ```flutter run```
+
+
+⌨️ with ❤️ by [Leonardo Barbosa](https://github.com/leonardojpereira) 😊
+
+<h3 align="center">
+  
+  :construction: PROJETO FINALIZADO :construction:
