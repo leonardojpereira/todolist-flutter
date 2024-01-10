@@ -34,7 +34,12 @@ Siga as instruções abaixo para instalar e executar o projeto em sua máquina:
    
    ``flutter run``
 
+## Observação
 
+- Certifique-se de ter o ambiente Flutter configurado corretamente. Para mais informações sobre a configuração do ambiente Flutter, consulte a documentação oficial abaixo:
+
+``https://flutter.dev/``
+  
 ⌨️ with ❤️ by [Leonardo Barbosa](https://github.com/leonardojpereira) 😊
 
 <h3 align="center">
