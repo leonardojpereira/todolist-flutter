@@ -15,7 +15,7 @@ Um app simples de lista de tarefas feito com o objetivo de por em prática os pr
 
 ## 💻 Tecnologias utilizadas
 -  <img align="center" alt="logo_react" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"> **Flutter**: Um poderoso framework mutiplataforma criado para construir interfaces de usuário (UI) nativas para iOS, Android, web e desktop usando a linguagem Dart.
--  
+  
 ## :electric_plug: Instalação e Uso
 
 Siga as instruções abaixo para instalar e executar o projeto em sua máquina:
